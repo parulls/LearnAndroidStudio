@@ -44,13 +44,17 @@ fun BirthdayCard(name: String) {
 }
 
 @Composable
-fun GreetingText(message: String, modifier: Modifier = Modifier){
+fun GreetingText(message: String, from: String, modifier: Modifier = Modifier){
     Surface (color = Color.Cyan){
         Text(
             text = message,
             fontSize = 60.sp,
             lineHeight = 60.sp,
             modifier = Modifier.padding(15.dp)
+        )
+        Text(
+            text = from,
+            fontSize = 30.sp,
         )
     }
 }
@@ -59,6 +63,6 @@ fun GreetingText(message: String, modifier: Modifier = Modifier){
 @Composable
 fun BirthdayCardPreview() {
     LearnAndroidStudioTheme {
-        GreetingText(message = "Hi Everyone! Let's come and join my birthday party, xoxo!")
+        GreetingText(message = "Hi Everyone! Let's come and join my birthday party, xoxo!", from = "From Parulian")
     }
 }

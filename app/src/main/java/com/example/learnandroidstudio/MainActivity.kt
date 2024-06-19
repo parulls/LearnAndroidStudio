@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
@@ -45,7 +46,7 @@ fun BirthdayCard(name: String) {
 
 @Composable
 fun GreetingText(message: String, from: String, modifier: Modifier = Modifier){
-    Surface (color = Color.Cyan){
+    Column {
         Text(
             text = message,
             fontSize = 60.sp,
@@ -55,6 +56,7 @@ fun GreetingText(message: String, from: String, modifier: Modifier = Modifier){
         Text(
             text = from,
             fontSize = 30.sp,
+            modifier = Modifier.padding(15.dp)
         )
     }
 }

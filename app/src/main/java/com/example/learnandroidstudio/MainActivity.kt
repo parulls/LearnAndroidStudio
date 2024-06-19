@@ -14,6 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.example.learnandroidstudio.ui.theme.LearnAndroidStudioTheme
 
 class MainActivity : ComponentActivity() {
@@ -47,7 +48,9 @@ fun GreetingText(message: String, modifier: Modifier = Modifier){
     Surface (color = Color.Cyan){
         Text(
             text = message,
-            modifier = Modifier.padding(24.dp)
+            fontSize = 60.sp,
+            lineHeight = 60.sp,
+            modifier = Modifier.padding(15.dp)
         )
     }
 }

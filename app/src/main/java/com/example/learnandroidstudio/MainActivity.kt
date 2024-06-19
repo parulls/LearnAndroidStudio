@@ -74,3 +74,9 @@ fun BirthdayCardPreview() {
         GreetingText(message = "Hi Everyone! Let's come and join my birthday party, xoxo!", from = "From Parulian")
     }
 }
+
+//Jetpack Compose adalah toolkit modern untuk membangun UI Android. Jetpack Compose menyederhanakan dan mempercepat pengembangan UI di Android dengan lebih sedikit kode, alat yang canggih, dan API Kotlin yang intuitif.
+//Antarmuka pengguna (UI) aplikasi adalah tampilan visual yang Anda lihat di layar: teks, gambar, tombol, dan berbagai jenis elemen lainnya.
+//Fungsi composable adalah elemen penyusun dasar Compose. Fungsi composable adalah fungsi yang mendeskripsikan beberapa bagian UI Anda.
+//Fungsi composable dianotasi menggunakan anotasi @Composable; anotasi ini memberi tahu compiler Compose bahwa fungsi ini dimaksudkan untuk mengonversi data menjadi UI.
+//Tiga elemen tata letak standar dan dasar di Compose adalah Column, Row,, dan Box. Tiga elemen tersebut adalah fungsi Composable yang menggunakan konten Composable sehingga Anda dapat menempatkan item di dalamnya. Misalnya, setiap turunan dalam Row akan ditempatkan berdampingan secara horizontal.

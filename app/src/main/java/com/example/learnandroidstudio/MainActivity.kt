@@ -23,9 +23,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             LearnAndroidStudioTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Parulian",
-                        modifier = Modifier.padding(innerPadding)
+                    BirthdayCard(
+                        name = "Pricilia"
                     )
                 }
             }
@@ -34,10 +33,20 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Surface(color = Color.Red) {
+fun BirthdayCard(name: String) {
+    Surface(color = Color.Cyan) {
         Text(
-            text = "Hai Semuanya, Nama saya $name!",
+            text = "Hi $name!\n",
+            modifier = Modifier.padding(24.dp)
+        )
+    }
+}
+
+@Composable
+fun GreetingText(message: String, modifier: Modifier = Modifier){
+    Surface (color = Color.Cyan){
+        Text(
+            text = message,
             modifier = Modifier.padding(24.dp)
         )
     }
@@ -45,8 +54,8 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
+fun BirthdayCardPreview() {
     LearnAndroidStudioTheme {
-        Greeting("Parulian")
+        GreetingText(message = "Hi Everyone! Let's come and join my birthday party, xoxo!")
     }
 }
